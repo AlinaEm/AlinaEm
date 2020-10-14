@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Alina Marchuk CV</title>
+        <link rel="stylesheet" type="text/css" href="cv.css">
+    </head>
+<body>
+    
+<div class="hide">
+    <div class="absolute">
+        <canvas id="stars" height="4000" width="4000"></canvas>
+    </div>
+</div>
+    
+    <div>
+    
+        <h1>ALINA MARCHUK</h1>
+        <img class="photo" src="./pictures/photo.jpg">
+    </div>
+
+<div class="absolute">
+    <div>
+        <h2>DEVELOPMENT PROJECTS</h2>
+    </div>
+    <div class="columns boxShadow">
+        <div class="item">
+            <p class="item-text">Creating Website for KPI University Student Council</p>
+            </div>
+        <div class="item">
+            <p class="item-text">Web-version: <a target="_blank" href="https://alinaem.github.io/AlinaEm/">here</a> <br> Code: <a target="_blank" href="https://github.com/AlinaEm/AlinaEm">here</a> </p>
+            </div>
+            <div class="item">
+                <p class="item-text">Dance Studio</p>
+                </div>
+            <div class="item">
+                <p class="item-text">Code: <a target="_blank" href="https://github.com/AlinaEm/dance-studio">here</a><br> Demo-video: <a target="_blank" href="https://youtu.be/Y8E-zUt5z8U"> here</a> </p>
+                </div>
+                <div class="item">
+                <p class="item-text">Music Animation</p>
+                </div>
+                <div class="item">
+                    <p class="item-text">Code: <a target="_blank" href="https://github.com/AlinaEm/space-bits">here</a></p>
+                    </div>
+    </div>
+    <div>
+        <h2>EDUCATION</h2>
+    </div>
+    <div class="columns boxShadow">
+        <div class="item">
+            <p class="item-text">Taras Shevchenko National University of Kyiv<br><i>Sept 2010 – Jul 2015<br> Kyiv, Ukraine</i></p>
+            </div>
+        <div class="item">
+            <p class="item-text">Bachelor’s degree in Political Science</p>
+            </div>
+            <div class="item">
+                <p class="item-text">Computer Academy Main Academy<br><i>Sept 2019 – Feb 2020<br> Kyiv, Ukraine </i></p>
+                </div>
+            <div class="item">
+                <p class="item-text">Front-End Web Development Course<br><br> <i> During the course I was learning:<br>  HTML;  CSS; LESS; Bootstrap; basis of JavaScript; jQuery</i></p>
+                </div>
+    </div>
+    <div>
+        <h2>SKILLS AND KNOWLEDGE</h2>
+    </div>
+    <div class="columns boxShadow">
+        <div class="item ">
+            <p class="item-text">HTML; CSS; (including Flex-Box and Grids); LESS; Bootstrap; Basis of JavaScript; jQuery</p>
+            </div>
+        <div class="item">
+            <p class="item-text"><b>LANGUAGES</b><br> Native: Ukrainian, Russian; <br>Professional working proficiency: English; <br>Beginner: German</p>
+            </div>
+    </div>
+
+    <div>
+        <p class="contactsHeading">Contacts</h2>
+    </div>
+    <div>
+        <div class="contacts-box">
+            
+            <div class="boxShadow2">
+
+            <div class="boxes">
+                <p class="item-text">
+                <br><b>E-mail:</b> alina.em.work@gmail.com<br>
+                <br><b>Skype:</b> Alina M<br>
+                <br><b>Phone number:</b> <a href="tel:+380638653325"> +380638653325</a><br>
+            </p>
+        </div>
+    </div>
+
+        <div class="boxes boxShadow2 box-marging">
+            <form action="telegram.php" method="POST">
+           <legend class="item-text">
+         <b>Leave me a message</b>
+        </legend>
+   
+        
+     <p>
+        <br>
+        
+        <label for="Name" class="item-text">Name:</label><input class="input form-margin-name" type="text" placeholder="Jhon Jhonson" name="user_name" id="name">
+        <br>
+        <label for="Phone" class="item-text">Phone:</label><input class="input form-margin-phone" type="text" placeholder="+49029991122" name="user_phone" id="">
+    
+            <br>  
+                <textarea class="input text-area" type="text"placeholder="Text me here" name="user_message"></textarea> 
+            </p>
+      
+        <button class="invisible" type="submit"> <img  class="send-button" src="pictures/send.svg"> </button>  
+    </form>
+
+    <div id="bla"></div>
+           </div>
+        </div>
+
+        <!--MOBILE Only-->
+
+
+<div class="boxes boxShadow2 mobile-marging">
+    <form action="telegram.php" method="POST">
+   <legend class="item-text">
+ <b>Leave me a message</b>
+</legend>
+
+
+<p>
+<br>
+
+<label for="Name" class="item-text">Name:</label><input class="input form-margin-name" type="text" placeholder="Jhon Jhonson" name="user_name" id="name">
+<br>
+<label for="Phone" class="item-text">Phone:</label><input class="input form-margin-phone" type="text" placeholder="+49029991122" name="user_phone" id="">
+
+    <br>  
+        <textarea class="input text-area" type="text"placeholder="Text me here" name="user_message"></textarea> 
+    </p>
+
+<button class="invisible" type="submit"> <img  class="send-button" src="pictures/send.svg"> </button>  
+</form>
+
+<div id="bla"></div>
+   </div>
+</div>
+
+    
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<!-- Optional: include a polyfill for ES6 Promises for IE11 -->
+
+</body>
+<script src="form.js"></script>
+<script src="cv.js"></script>
+</html>

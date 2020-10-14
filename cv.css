@@ -1,0 +1,247 @@
+body {
+    background: url(./pictures/background.jpg);
+    overflow-x: hidden;
+}
+h1 {
+    
+    color: rgb(215, 227, 250);
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    font-weight: bold;
+    font-size: 5rem;
+    text-shadow: 0px 0px 6px rgba(240, 229, 79, 0.87);
+    -webkit-text-stroke: rgb(218, 248, 85) 1px;
+    text-align: center;
+}
+
+
+h2 {
+    color: rgb(215, 227, 250);
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    font-size: 2rem;
+    -webkit-text-stroke: rgb(218, 248, 85) 1px;
+    text-align: center;
+}
+
+a {
+    color: rgb(34, 33, 33);
+    text-decoration: none;
+    font-style: italic;
+}
+
+a:hover {
+    text-shadow: 0px 0px 6px rgba(240, 229, 79, 0.87);
+    text-transform: uppercase;
+}
+
+.photo {
+    border-radius: 50%;
+    width: 20%;
+    height: auto;
+    align-items: center;
+    margin-left: 40%;
+    box-shadow: 0px 0px 20px rgba(240, 229, 79, 0.87);
+}
+
+
+.item{
+    background-color: rgb(215, 227, 250);
+    border: rgb(218, 248, 85) inset 1px;
+    border-radius: 3%;
+    box-shadow: inset 6px 6px 12px 8px darkgrey;
+}
+
+.item-text {
+    color: rgb(34, 33, 33);
+    margin-left: 1.3rem;
+    margin-right: 1.3rem;
+    margin-top: 1.3rem;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+}
+
+.columns {
+    display: grid;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.5rem;
+    grid-auto-rows: auto;
+}
+
+
+.boxShadow {
+    padding: 1em;
+    box-shadow: 0 0 10px 5px rgb(199, 224, 220);
+}
+
+
+.absolute {
+    position: absolute;
+   
+}
+
+.contactsHeading {
+    color: rgb(215, 227, 250);
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    font-size: 3rem;
+    -webkit-text-stroke: rgb(218, 248, 85) 1px;
+    margin-left: 5rem;
+    
+}
+
+.contacts-box {
+    display: flexbox;
+    flex-direction: row;
+    margin-left: 5rem;
+}
+
+.boxes {
+    display: inline-flex;
+    background-color: rgb(215, 227, 250);
+    border: rgb(218, 248, 85) inset 1px;
+    border-radius: 3%;
+    box-shadow: inset 6px 6px 12px 8px darkgrey;
+}
+
+.box-marging {
+    margin-left: 15rem;
+    width: 33rem;
+    height: 19rem;
+    
+}
+
+.boxShadow2 {
+    display: inline-flex;
+    padding: 1em;
+    box-shadow: 0 0 10px 5px rgb(235, 236, 139);
+    border-radius: 1rem;
+}
+
+
+.input {
+    background-color: rgb(228, 230, 168);
+    text-indent: 0.5rem;
+    margin-top: 0.5rem;
+    border-radius: 0.2rem;
+
+}
+.text-area {    
+    height: 9rem;
+    width:22rem;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    resize: none;
+}
+
+.form-margin-name {
+    margin-left: -0.8rem;
+    margin-top: -4rem;
+}
+.form-margin-phone {
+    margin-left: -1rem;
+}
+
+.input:focus{
+    background-color: white;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    font-weight: 500;
+}
+
+.send-button {
+    position: absolute;
+    background: transparent;
+    width: 4rem;
+    height: 15rem;
+    border: 0;
+    margin-left: 26rem;
+    margin-top: -17rem;
+    align-items: stretch;
+    visibility: visible;
+}
+
+.send-button:hover {
+    border: none;
+    background: radial-gradient(#800000, DarkOrange, #FFD700, #FFE4B5);
+    animation: missile 2s infinite;
+    animation-direction: reverse;
+    background-size: 400%;
+    border-radius: 10%;
+}
+
+@keyframes missile {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    50% {
+        background: radial-gradient(DarkOrange,OrangeRed, #FFD700, #FFE4B5);
+        background-position: 100% 0%;
+    }
+
+    100% {
+        background: radial-gradient(#800000, DarkOrange, #FFD700, #FFE4B5);
+        background-position: 0% 0%;
+    }
+
+}
+
+ 
+
+.invisible {
+    visibility: hidden;
+}
+
+.swal-button--confirm {
+    padding: 7px 19px;
+    border-radius: 2px;
+    background-color: #3a0658;
+    font-size: 12px;
+    text-shadow: 0px -1px 0px rgba(241, 241, 230, 0.856);
+  }
+
+  /*Mobile */
+
+  @media (max-width: 1100px) {
+      .hide {
+    display: none;
+      }
+  }
+
+  @media (min-width: 1450px) {
+    .hide {
+  display: none;
+    }
+}
+
+
+@media (max-width: 1059px) {
+    .box-marging {
+        display: none;
+    }
+}
+
+
+@media (min-width: 1060px) and (max-width: 1216px) {
+    .box-marging {
+        margin-left: 5rem;
+        width: 33rem;
+    height: 19rem;
+    }
+}
+
+
+
+@media (max-width: 1059px) {
+    .mobile-marging {
+        display: flex;
+        margin-top: 2rem;
+        margin-left: 5rem;
+        width: 33rem;
+        height: 19rem;
+    }
+}
+
+@media (min-width: 1060px) {
+    .mobile-marging{
+        display: none;
+    }
+}
