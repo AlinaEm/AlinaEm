@@ -10,7 +10,7 @@ body {
     flex-direction: column;
 }
 
-h1 {    
+h1 {
     color: rgb(215, 227, 250);
     font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
     font-weight: bold;
@@ -43,6 +43,7 @@ a:hover {
 }
 
 .photo {
+    display: inline-flex;
     border-radius: 50%;
     width: 25%;
     height: auto;
@@ -253,5 +254,11 @@ a:hover {
 @media (min-width: 1060px) {
     .mobile-marging{
         display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .wrapper{
+        margin-left: 5rem;
     }
 }
