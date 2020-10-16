@@ -11,7 +11,7 @@ body {
 }
 
 h1 {    
-    color: rgb(182, 199, 216);
+    color: rgb(215, 227, 250);
     font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
     font-weight: bold;
     font-size: 5rem;
@@ -243,7 +243,7 @@ a:hover {
         display: flex;
         margin-top: 2rem;
         margin-left: 5rem;
-        width: 33rem;
+        width: 31rem;
         height: 19rem;
         margin-bottom: 2rem;
         margin-right: 2rem;
